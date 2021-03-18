@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+ }
+
+.overlay {
+
+  position: absolute;
+  margin: auto;
+  bottom: 100%;
+  left: 400px;
+  right: 0;
+  background-image:url("im2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: 0.9s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  display: block;
+  height: 100%;
+}
+
+.text {
+  border: 4px solid yellow;
+  padding: 10px;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  text-align: center;
+}
+.centered {
+  border: 4px solid yellow;
+  padding: 11px;
+  position: absolute;
+  top: 60%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  color: white;
+  }
+  span
+  {
+    background-color: black;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="centered"><h1><i><span>With VIRTUAL TRY-ON FACILITY</span></i></h1></div>
+  <div class="row">
+    
+  
+   <div class="column">
+    <img src="im3.jpeg" alt="Forest" style="width:420px;height: 700px" class="image">
+  </div>
+  <div class="column">
+    <img src="a1.png" alt="Forest" style="width:620px;height: 700px" class="image">
+  </div>
+ 
+  <div class="column">
+    <img src="im1.jpeg" alt="Forest" style="width:420px;height:700px" class="image">
+  </div>
+</div>
+<center>
+  <div class="overlay">
+    <a href="http://127.0.0.1:5000/"><div class="text"><b>SHOP NOW</b></div></a>
+  </div>
+</center>
+</div>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
